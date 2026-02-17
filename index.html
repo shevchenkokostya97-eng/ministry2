@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Молитовний щоденник | Служіння в Одесі</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+        
+        :root {
+            --primary: #2563eb;
+            --secondary: #64748b;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .hero-gradient {
+            background: radial-gradient(circle at top right, #dbeafe 0%, #f8fafc 50%);
+        }
+
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-nav border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center gap-2">
+                    <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center shadow-lg shadow-blue-200">
+                        <i class="fas fa-dove text-white text-xl"></i>
+                    </div>
+                    <span class="text-xl font-extrabold tracking-tight text-slate-900">КЕМПУС <span class="text-blue-600 font-medium">ОДЕСА</span></span>
+                </div>
+                <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+                    <a href="#about" class="hover:text-blue-600 transition">Про служіння</a>
+                    <a href="#news" class="hover:text-blue-600 transition">Новини</a>
+                    <a href="#prayer" class="hover:text-blue-600 transition text-blue-600 bg-blue-50 px-3 py-1 rounded-lg">Молитва</a>
+                    <button class="bg-slate-900 text-white px-6 py-2.5 rounded-full hover:bg-slate-800 transition shadow-md">
+                        Підтримати
+                    </button>
+                </div>
+                <div class="md:hidden">
+                    <i class="fas fa-bars text-2xl text-slate-600"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="hero-gradient pt-32 pb-20 px-4">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 bg-blue-100 text-blue-700 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                    </span>
+                    Актуальне служіння: Одеса
+                </div>
+                <h1 class="text-5xl md:text-7xl font-black text-slate-900 leading-[1.1]">
+                    Змінюємо життя <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-500">
+                        студентів разом
+                    </span>
+                </h1>
+                <p class="text-lg text-slate-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                    Дякуємо, що ви є частиною нашої команди! Ваша молитва та фінансова підтримка відкривають двері для Євангелія в університетах Одеси.
+                </p>
+                <div class="flex flex-wrap justify-center lg:justify-start gap-4">
+                    <a href="#news" class="bg-blue-600 text-white px-8 py-4 rounded-2xl font-bold hover:bg-blue-700 transition-all shadow-xl shadow-blue-200 flex items-center gap-2">
+                        Читати останній лист <i class="fas fa-arrow-right text-sm"></i>
+                    </a>
+                    <div class="flex -space-x-3 items-center">
+                        <div class="w-12 h-12 rounded-full border-4 border-white bg-slate-200 overflow-hidden"><img src="https://ui-avatars.com/api/?name=Team+1&background=random" alt="team"></div>
+                        <div class="w-12 h-12 rounded-full border-4 border-white bg-slate-200 overflow-hidden"><img src="https://ui-avatars.com/api/?name=Team+2&background=random" alt="team"></div>
+                        <div class="w-12 h-12 rounded-full border-4 border-white bg-slate-200 overflow-hidden"><img src="https://ui-avatars.com/api/?name=Team+3&background=random" alt="team"></div>
+                        <span class="pl-6 text-sm font-bold text-slate-500">+12 партнерів</span>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="bg-white p-4 rounded-[2.5rem] shadow-2xl rotate-3 relative z-10">
+                    <div class="aspect-video bg-slate-100 rounded-[2rem] overflow-hidden flex items-center justify-center">
+                         <i class="fas fa-image text-slate-300 text-6xl"></i>
+                         <!-- Замініть це на реальне фото команди -->
+                    </div>
+                </div>
+                <div class="absolute -bottom-6 -left-6 bg-blue-600 text-white p-6 rounded-3xl shadow-xl z-20 hidden md:block">
+                    <div class="text-3xl font-bold">100+</div>
+                    <div class="text-xs uppercase font-bold tracking-widest opacity-80">Студентів охоплено</div>
+                </div>
+                <div class="absolute top-1/2 -right-10 w-40 h-40 bg-indigo-100 rounded-full blur-3xl -z-10"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 py-20">
+        <div class="grid lg:grid-cols-3 gap-16">
+            
+            <!-- Left Column: News Feed -->
+            <div id="news" class="lg:col-span-2 space-y-16">
+                <div>
+                    <h2 class="text-3xl font-extrabold mb-10 flex items-center gap-4">
+                        <span class="w-12 h-1 px-0 bg-blue-600 rounded-full"></span>
+                        Останній молитовний лист
+                    </h2>
+                    
+                    <article class="bg-white rounded-[2rem] p-8 md:p-12 border border-slate-100 shadow-sm border-t-8 border-t-blue-600">
+                        <div class="flex items-center justify-between mb-8">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-calendar-day text-slate-400"></i>
+                                </div>
+                                <div>
+                                    <div class="text-sm font-bold text-slate-900">2 жовтня 2025</div>
+                                    <div class="text-xs text-slate-500">Локація: Одеса</div>
+                                </div>
+                            </div>
+                            <button class="text-slate-400 hover:text-blue-600 transition"><i class="fas fa-share-alt"></i></button>
+                        </div>
+
+                        <h3 class="text-3xl font-black mb-6 leading-tight text-slate-900">Одеса: Нові горизонти для Англійського Клубу</h3>
+                        
+                        <div class="space-y-6 text-slate-600 leading-relaxed text-lg">
+                            <p>Ми з великою радістю повідомляємо, що Одеська команда Кемпус офіційно розпочала осінній сезон служіння. Наша головна стратегія на цей семестр — <strong>Англійський Клуб</strong>, який допомагає нам знайомитися з новими студентами в невимушеній атмосфері.</p>
+                            
+                            <p>Зараз ми активно молимося про пошук нового приміщення, яке б стало "домом" для наших зустрічей та центром для розвитку команди.</p>
+                            
+                            <div class="bg-slate-50 p-6 rounded-2xl border-l-4 border-blue-600 my-8">
+                                <p class="italic font-medium text-slate-700">"Кожен студент в Одесі має право почути Радісну Звістку. Дякуємо, що допомагаєте нам нести це світло!"</p>
+                            </div>
+                            
+                            <p>Також ми бачимо велику потребу в єдності команди. Нові виклики вимагають від нас ще більшої довіри Богу та один одному.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Timeline Section -->
+                <div>
+                    <h2 class="text-3xl font-extrabold mb-10 flex items-center gap-4">
+                        <span class="w-12 h-1 px-0 bg-indigo-500 rounded-full"></span>
+                        Наша історія
+                    </h2>
+                    <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
+                        
+                        <!-- Event 1 -->
+                        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                            <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-blue-600 text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                                <i class="fas fa-star text-xs"></i>
+                            </div>
+                            <div class="w-[calc(100%-4rem)] md:w-[45%] bg-white p-6 rounded-2xl border border-slate-100 shadow-sm card-hover">
+                                <div class="font-bold text-blue-600 mb-1">Жовтень 2025</div>
+                                <div class="font-bold text-slate-900">Фокус на Одесі</div>
+                                <p class="text-sm text-slate-500 mt-2">Запуск Англійського клубу та активний розвиток Одеської команди.</p>
+                            </div>
+                        </div>
+
+                        <!-- Event 2 -->
+                        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                            <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                                <i class="fas fa-shield-alt text-xs"></i>
+                            </div>
+                            <div class="w-[calc(100%-4rem)] md:w-[45%] bg-white p-6 rounded-2xl border border-slate-100 shadow-sm card-hover">
+                                <div class="font-bold text-slate-400 mb-1">Серпень 2022</div>
+                                <div class="font-bold text-slate-900">Кемпус Дніпро & ЗСУ</div>
+                                <p class="text-sm text-slate-500 mt-2">Період служіння в Дніпрі та час випробувань, коли частина команди була в лавах ЗСУ.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Sidebar -->
+            <div class="space-y-12">
+                
+                <!-- Prayer List Card -->
+                <div id="prayer" class="bg-white rounded-[2rem] p-8 border border-slate-100 shadow-sm sticky top-28">
+                    <h3 class="text-2xl font-black mb-8 flex items-center gap-3">
+                        <i class="fas fa-praying-hands text-blue-600"></i> Молитовні потреби
+                    </h3>
+                    
+                    <div class="space-y-6">
+                        <div class="group p-4 rounded-2xl hover:bg-blue-50 transition border border-transparent hover:border-blue-100">
+                            <div class="flex items-center gap-4 mb-3">
+                                <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="text-xs font-bold uppercase tracking-widest text-blue-600">Студенти</div>
+                            </div>
+                            <h4 class="font-bold text-slate-900">Англійський Клуб</h4>
+                            <p class="text-sm text-slate-500 mt-2 leading-relaxed">За успішний старт та глибокі розмови про віру зі студентами.</p>
+                        </div>
+
+                        <div class="group p-4 rounded-2xl hover:bg-blue-50 transition border border-transparent hover:border-blue-100">
+                            <div class="flex items-center gap-4 mb-3">
+                                <div class="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center group-hover:bg-indigo-600 group-hover:text-white transition">
+                                    <i class="fas fa-building-user"></i>
+                                </div>
+                                <div class="text-xs font-bold uppercase tracking-widest text-indigo-600">Команда</div>
+                            </div>
+                            <h4 class="font-bold text-slate-900">Нове приміщення</h4>
+                            <p class="text-sm text-slate-500 mt-2 leading-relaxed">За Боже керівництво у пошуку офісу та залу для зустрічей в Одесі.</p>
+                        </div>
+
+                        <div class="group p-4 rounded-2xl hover:bg-blue-50 transition border border-transparent hover:border-blue-100">
+                            <div class="flex items-center gap-4 mb-3">
+                                <div class="w-10 h-10 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center group-hover:bg-emerald-600 group-hover:text-white transition">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="text-xs font-bold uppercase tracking-widest text-emerald-600">Розвиток</div>
+                            </div>
+                            <h4 class="font-bold text-slate-900">Фінансова стабільність</h4>
+                            <p class="text-sm text-slate-500 mt-2 leading-relaxed">За нових партнерів для досягнення цілей РКП та підтримку місії.</p>
+                        </div>
+                    </div>
+
+                    <button class="w-full mt-10 bg-blue-600 text-white py-4 rounded-2xl font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-100 flex items-center justify-center gap-2">
+                        Я буду молитися <i class="fas fa-check-circle"></i>
+                    </button>
+                </div>
+
+                <!-- Fast Contact -->
+                <div class="bg-slate-900 rounded-[2rem] p-8 text-white">
+                    <h3 class="text-xl font-bold mb-4">Маєте слово підбадьорення?</h3>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">Напишіть нам коротке повідомлення — це дуже надихає команду!</p>
+                    <form class="space-y-4" onsubmit="event.preventDefault()">
+                        <input type="text" placeholder="Ваше ім'я" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <textarea placeholder="Повідомлення..." rows="3" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                        <button class="w-full bg-white text-slate-900 py-3 rounded-xl font-bold hover:bg-blue-50 transition">Надіслати</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 py-16">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-10">
+            <div>
+                <div class="flex items-center gap-2 mb-4">
+                    <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-dove text-white text-xs"></i>
+                    </div>
+                    <span class="text-lg font-extrabold tracking-tight text-slate-900">КЕМПУС <span class="text-blue-600 font-medium">ОДЕСА</span></span>
+                </div>
+                <p class="text-slate-500 text-sm max-w-xs">Служіння студентам через благовістя, учнівство та лідерство.</p>
+            </div>
+            <div class="flex gap-6 text-2xl text-slate-400">
+                <a href="#" class="hover:text-blue-600 transition"><i class="fab fa-telegram"></i></a>
+                <a href="#" class="hover:text-blue-600 transition"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-blue-600 transition"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="hover:text-blue-600 transition"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="text-right">
+                <p class="text-sm font-bold text-slate-900">Україна для Христа</p>
+                <p class="text-xs text-slate-400 mt-1 uppercase tracking-widest">Молитовний бюлетень © 2026</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
