@@ -41,7 +41,7 @@
 </head>
 <body class="bg-slate-50 text-slate-900 overflow-x-hidden">
 
-    <!-- Navigation -->
+    <!-- Навігація -->
     <nav class="fixed top-0 w-full z-50 glass-nav border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
@@ -66,7 +66,7 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Головний екран -->
     <section id="about" class="hero-gradient pt-32 pb-20 px-4">
         <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
             <div class="space-y-8 text-center lg:text-left">
@@ -102,7 +102,6 @@
                 <div class="bg-white p-4 rounded-[2.5rem] shadow-2xl rotate-3 relative z-10">
                     <div class="aspect-video bg-slate-100 rounded-[2rem] overflow-hidden flex items-center justify-center">
                          <i class="fas fa-image text-slate-300 text-6xl"></i>
-                         <!-- Замініть це на реальне фото команди -->
                     </div>
                 </div>
                 <div class="absolute -bottom-6 -left-6 bg-blue-600 text-white p-6 rounded-3xl shadow-xl z-20 hidden md:block">
@@ -114,11 +113,11 @@
         </div>
     </section>
 
-    <!-- Main Content -->
+    <!-- Контент -->
     <main class="max-w-7xl mx-auto px-4 py-20">
         <div class="grid lg:grid-cols-3 gap-16">
             
-            <!-- Left Column: News Feed -->
+            <!-- Ліва колонка: Новини -->
             <div id="news" class="lg:col-span-2 space-y-16">
                 <div>
                     <h2 class="text-3xl font-extrabold mb-10 flex items-center gap-4">
@@ -156,7 +155,7 @@
                     </article>
                 </div>
 
-                <!-- Timeline Section -->
+                <!-- Хронологія -->
                 <div>
                     <h2 class="text-3xl font-extrabold mb-10 flex items-center gap-4">
                         <span class="w-12 h-1 px-0 bg-indigo-500 rounded-full"></span>
@@ -164,7 +163,7 @@
                     </h2>
                     <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
                         
-                        <!-- Event 1 -->
+                        <!-- Подія 1 -->
                         <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
                             <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-blue-600 text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
                                 <i class="fas fa-star text-xs"></i>
@@ -176,7 +175,7 @@
                             </div>
                         </div>
 
-                        <!-- Event 2 -->
+                        <!-- Подія 2 -->
                         <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
                             <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
                                 <i class="fas fa-shield-alt text-xs"></i>
@@ -191,11 +190,11 @@
                 </div>
             </div>
 
-            <!-- Right Column: Sidebar -->
+            <!-- Права колонка: Сайдбар -->
             <div class="space-y-12">
                 
-                <!-- Prayer List Card -->
-                <div id="prayer" class="bg-white rounded-[2rem] p-8 border border-slate-100 shadow-sm sticky top-28">
+                <!-- Молитовні потреби (ТЕПЕР БЕЗ STICKY) -->
+                <div id="prayer" class="bg-white rounded-[2rem] p-8 border border-slate-100 shadow-sm">
                     <h3 class="text-2xl font-black mb-8 flex items-center gap-3">
                         <i class="fas fa-praying-hands text-blue-600"></i> Молитовні потреби
                     </h3>
@@ -240,13 +239,13 @@
                     </button>
                 </div>
 
-                <!-- Fast Contact -->
+                <!-- Контактна форма -->
                 <div class="bg-slate-900 rounded-[2rem] p-8 text-white">
                     <h3 class="text-xl font-bold mb-4">Маєте слово підбадьорення?</h3>
                     <p class="text-slate-400 text-sm mb-6 leading-relaxed">Напишіть нам коротке повідомлення — це дуже надихає команду!</p>
                     <form class="space-y-4" onsubmit="event.preventDefault()">
-                        <input type="text" placeholder="Ваше ім'я" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        <textarea placeholder="Повідомлення..." rows="3" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                        <input type="text" placeholder="Ваше ім'я" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 text-white">
+                        <textarea placeholder="Повідомлення..." rows="3" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 text-white"></textarea>
                         <button class="w-full bg-white text-slate-900 py-3 rounded-xl font-bold hover:bg-blue-50 transition">Надіслати</button>
                     </form>
                 </div>
@@ -254,7 +253,7 @@
         </div>
     </main>
 
-    <!-- Footer -->
+    <!-- Футер -->
     <footer class="bg-white border-t border-slate-200 py-16">
         <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-10">
             <div>
