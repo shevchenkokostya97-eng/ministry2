@@ -91,17 +91,21 @@
                         Читати останній лист <i class="fas fa-arrow-right text-sm"></i>
                     </a>
                     <div class="flex -space-x-3 items-center">
-                        <div class="w-12 h-12 rounded-full border-4 border-white bg-slate-200 overflow-hidden"><img src="https://ui-avatars.com/api/?name=Team+1&background=random" alt="team"></div>
-                        <div class="w-12 h-12 rounded-full border-4 border-white bg-slate-200 overflow-hidden"><img src="https://ui-avatars.com/api/?name=Team+2&background=random" alt="team"></div>
-                        <div class="w-12 h-12 rounded-full border-4 border-white bg-slate-200 overflow-hidden"><img src="https://ui-avatars.com/api/?name=Team+3&background=random" alt="team"></div>
+                        <div class="w-12 h-12 rounded-full border-4 border-white bg-slate-200 overflow-hidden"><img src="https://ui-avatars.com/api/?name=U&background=2563eb&color=fff" alt="partner"></div>
+                        <div class="w-12 h-12 rounded-full border-4 border-white bg-slate-200 overflow-hidden"><img src="https://ui-avatars.com/api/?name=P&background=indigo&color=fff" alt="partner"></div>
+                        <div class="w-12 h-12 rounded-full border-4 border-white bg-slate-200 overflow-hidden"><img src="https://ui-avatars.com/api/?name=C&background=slate&color=fff" alt="partner"></div>
                         <span class="pl-6 text-sm font-bold text-slate-500">+12 партнерів</span>
                     </div>
                 </div>
             </div>
             <div class="relative">
                 <div class="bg-white p-4 rounded-[2.5rem] shadow-2xl rotate-3 relative z-10">
-                    <div class="aspect-video bg-slate-100 rounded-[2rem] overflow-hidden flex items-center justify-center">
-                         <i class="fas fa-image text-slate-300 text-6xl"></i>
+                    <div class="aspect-video bg-slate-100 rounded-[2rem] overflow-hidden">
+                        <!-- ЗАМІНІТЬ ПЕРШЕ ФОТО ТУТ -->
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1000&auto=format&fit=crop" 
+                             alt="Команда Кемпус Одеса" 
+                             class="w-full h-full object-cover"
+                             onerror="this.src='https://via.placeholder.com/800x450?text=Ваше+Фото+Тут'">
                     </div>
                 </div>
                 <div class="absolute -bottom-6 -left-6 bg-blue-600 text-white p-6 rounded-3xl shadow-xl z-20 hidden md:block">
@@ -136,11 +140,17 @@
                                     <div class="text-xs text-slate-500">Локація: Одеса</div>
                                 </div>
                             </div>
-                            <button class="text-slate-400 hover:text-blue-600 transition"><i class="fas fa-share-alt"></i></button>
                         </div>
 
                         <h3 class="text-3xl font-black mb-6 leading-tight text-slate-900">Одеса: Нові горизонти для Англійського Клубу</h3>
                         
+                        <!-- ФОТО ВСЕРЕДИНІ ЛИСТА -->
+                        <div class="mb-8 rounded-2xl overflow-hidden shadow-lg h-64 md:h-80">
+                            <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=1000&auto=format&fit=crop" 
+                                 alt="Студенти на зустрічі" 
+                                 class="w-full h-full object-cover">
+                        </div>
+
                         <div class="space-y-6 text-slate-600 leading-relaxed text-lg">
                             <p>Ми з великою радістю повідомляємо, що Одеська команда Кемпус офіційно розпочала осінній сезон служіння. Наша головна стратегія на цей семестр — <strong>Англійський Клуб</strong>, який допомагає нам знайомитися з новими студентами в невимушеній атмосфері.</p>
                             
@@ -163,7 +173,6 @@
                     </h2>
                     <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
                         
-                        <!-- Подія 1 -->
                         <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
                             <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-blue-600 text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
                                 <i class="fas fa-star text-xs"></i>
@@ -175,7 +184,6 @@
                             </div>
                         </div>
 
-                        <!-- Подія 2 -->
                         <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
                             <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
                                 <i class="fas fa-shield-alt text-xs"></i>
@@ -193,7 +201,6 @@
             <!-- Права колонка: Сайдбар -->
             <div class="space-y-12">
                 
-                <!-- Молитовні потреби (ТЕПЕР БЕЗ STICKY) -->
                 <div id="prayer" class="bg-white rounded-[2rem] p-8 border border-slate-100 shadow-sm">
                     <h3 class="text-2xl font-black mb-8 flex items-center gap-3">
                         <i class="fas fa-praying-hands text-blue-600"></i> Молитовні потреби
@@ -239,7 +246,6 @@
                     </button>
                 </div>
 
-                <!-- Контактна форма -->
                 <div class="bg-slate-900 rounded-[2rem] p-8 text-white">
                     <h3 class="text-xl font-bold mb-4">Маєте слово підбадьорення?</h3>
                     <p class="text-slate-400 text-sm mb-6 leading-relaxed">Напишіть нам коротке повідомлення — це дуже надихає команду!</p>
